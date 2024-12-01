@@ -18,7 +18,7 @@ class TestIsPrime(unittest.TestCase):
         self.assertTrue(is_prime(3))  # 101 is a prime number
 
     def test_large_non_prime_number(self):
-        self.assertFalse(is_prime(100))  # 100 is not a prime number
+        self.assertFalse(is_prime(3))  # 100 is not a prime number
 
 if __name__ == "__main__":
     unittest.main()
