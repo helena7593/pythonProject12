@@ -1,9 +1,9 @@
 import unittest
-from math import is_prime
+from math import *
 
 class TestIsPrime(unittest.TestCase):
     def test_prime_number(self):
-        self.assertTrue(is_prime(7))  # 7 is a prime number
+        self.assertTrue(is_prime(8))  # 7 is a prime number
         self.assertTrue(is_prime(13))  # 13 is a prime number
 
     def test_non_prime_number(self):
@@ -20,5 +20,5 @@ class TestIsPrime(unittest.TestCase):
     def test_large_non_prime_number(self):
         self.assertFalse(is_prime(100))  # 100 is not a prime number
 
-if name == "__main__":
+if __name__ == "__main__":
     unittest.main()

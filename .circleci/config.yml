@@ -3,9 +3,9 @@ version: 2.1
 jobs:
   test:
     docker:
-      - image: python:3.10  # Використовуємо Python 3.10
+      - image: python:3.10
     steps:
-      - checkout            # Клонування коду вашого репозиторію
+      - checkout
       - run:
           name: Install dependencies
           command: |
